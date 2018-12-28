@@ -12,7 +12,7 @@ namespace BertScout2018XF.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>() ?? new MockDataStore();
+        public IDataStore<Team> DataStore => DependencyService.Get<IDataStore<Team>>() ?? new MockDataStore();
 
         bool isBusy = false;
         public bool IsBusy

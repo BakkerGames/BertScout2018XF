@@ -11,13 +11,13 @@ namespace BertScout2018XF.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class NewItemPage : ContentPage
     {
-        public Item Item { get; set; }
+        public Team Team { get; set; }
 
         public NewItemPage()
         {
             InitializeComponent();
 
-            Item = new Item
+            Team = new Team
             {
                 Text = "Item name",
                 Description = "This is an item description."
@@ -28,7 +28,7 @@ namespace BertScout2018XF.Views
 
         async void Save_Clicked(object sender, EventArgs e)
         {
-            MessagingCenter.Send(this, "AddItem", Item);
+            MessagingCenter.Send(this, "AddItem", Team);
             await Navigation.PopModalAsync();
         }
     }

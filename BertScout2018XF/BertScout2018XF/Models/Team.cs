@@ -2,7 +2,7 @@
 
 namespace BertScout2018XF.Models
 {
-    public class Item
+    public class Team
     {
         public string Id { get; set; }
         public string Text { get; set; }

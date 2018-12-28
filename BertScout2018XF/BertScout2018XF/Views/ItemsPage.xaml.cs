@@ -27,7 +27,7 @@ namespace BertScout2018XF.Views
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
-            var item = args.SelectedItem as Item;
+            var item = args.SelectedItem as Team;
             if (item == null)
                 return;
 

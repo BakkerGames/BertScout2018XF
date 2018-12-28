@@ -19,8 +19,8 @@ namespace BertScout2018XF.Views
 
             Team = new Team
             {
-                Text = "Item name",
-                Description = "This is an item description."
+                Number = "133",
+                Name = "BERT"
             };
 
             BindingContext = this;

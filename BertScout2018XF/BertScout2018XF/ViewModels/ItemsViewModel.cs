@@ -12,19 +12,19 @@ namespace BertScout2018XF.ViewModels
 {
     public class ItemsViewModel : BaseViewModel
     {
-        public ObservableCollection<Team> Items { get; set; }
+        public ObservableCollection<Team> Teams { get; set; }
         public Command LoadItemsCommand { get; set; }
 
         public ItemsViewModel()
         {
             Title = "Browse";
-            Items = new ObservableCollection<Team>();
+            Teams = new ObservableCollection<Team>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
             MessagingCenter.Subscribe<NewItemPage, Team>(this, "AddItem", async (obj, item) =>
             {
                 var newItem = item as Team;
-                Items.Add(newItem);
+                Teams.Add(newItem);
                 await DataStore.AddItemAsync(newItem);
             });
         }
@@ -38,11 +38,11 @@ namespace BertScout2018XF.ViewModels
 
             try
             {
-                Items.Clear();
+                Teams.Clear();
                 var items = await DataStore.GetItemsAsync(true);
                 foreach (var item in items)
                 {
-                    Items.Add(item);
+                    Teams.Add(item);
                 }
             }
             catch (Exception ex)

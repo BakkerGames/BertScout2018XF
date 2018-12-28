@@ -9,7 +9,7 @@ namespace BertScout2018XF.ViewModels
         public Team Team { get; set; }
         public ItemDetailViewModel(Team item = null)
         {
-            Title = item?.Text;
+            Title = item?.Number;
             Team = item;
         }
     }

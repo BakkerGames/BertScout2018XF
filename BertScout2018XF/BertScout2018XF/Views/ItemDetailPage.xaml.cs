@@ -26,8 +26,8 @@ namespace BertScout2018XF.Views
 
             var item = new Team
             {
-                Text = "Item 1",
-                Description = "This is an item description."
+                Number = "0001",
+                Name = "Team Name"
             };
 
             viewModel = new ItemDetailViewModel(item);

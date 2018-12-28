@@ -10,20 +10,20 @@ using BertScout2018XF.Views;
 
 namespace BertScout2018XF.ViewModels
 {
-    public class ItemsViewModel : BaseViewModel
+    public class TeamsViewModel : BaseViewModel
     {
         public ObservableCollection<Team> Teams { get; set; }
         public Command LoadItemsCommand { get; set; }
 
-        public ItemsViewModel()
+        public TeamsViewModel()
         {
             Title = "Browse";
             Teams = new ObservableCollection<Team>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
-            MessagingCenter.Subscribe<NewItemPage, Team>(this, "AddItem", async (obj, item) =>
+            MessagingCenter.Subscribe<NewTeamPage, Team>(this, "AddItem", async (obj, team) =>
             {
-                var newItem = item as Team;
+                var newItem = team as Team;
                 Teams.Add(newItem);
                 await DataStore.AddItemAsync(newItem);
             });

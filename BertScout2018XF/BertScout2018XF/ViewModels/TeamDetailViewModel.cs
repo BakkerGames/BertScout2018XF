@@ -4,13 +4,13 @@ using BertScout2018XF.Models;
 
 namespace BertScout2018XF.ViewModels
 {
-    public class ItemDetailViewModel : BaseViewModel
+    public class TeamDetailViewModel : BaseViewModel
     {
         public Team Team { get; set; }
-        public ItemDetailViewModel(Team item = null)
+        public TeamDetailViewModel(Team team = null)
         {
-            Title = item?.Number;
-            Team = item;
+            Title = team?.Number;
+            Team = team;
         }
     }
 }

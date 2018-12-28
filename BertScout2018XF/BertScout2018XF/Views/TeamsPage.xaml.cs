@@ -14,15 +14,15 @@ using BertScout2018XF.ViewModels;
 namespace BertScout2018XF.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ItemsPage : ContentPage
+    public partial class TeamsPage : ContentPage
     {
-        ItemsViewModel viewModel;
+        TeamsViewModel viewModel;
 
-        public ItemsPage()
+        public TeamsPage()
         {
             InitializeComponent();
 
-            BindingContext = viewModel = new ItemsViewModel();
+            BindingContext = viewModel = new TeamsViewModel();
         }
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
@@ -31,7 +31,7 @@ namespace BertScout2018XF.Views
             if (item == null)
                 return;
 
-            await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
+            await Navigation.PushAsync(new TeamDetailPage(new TeamDetailViewModel(item)));
 
             // Manually deselect item.
             ItemsListView.SelectedItem = null;
@@ -39,7 +39,7 @@ namespace BertScout2018XF.Views
 
         async void AddItem_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NavigationPage(new NewItemPage()));
+            await Navigation.PushModalAsync(new NavigationPage(new NewTeamPage()));
         }
 
         protected override void OnAppearing()

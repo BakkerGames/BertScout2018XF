@@ -9,11 +9,11 @@ using BertScout2018XF.Models;
 namespace BertScout2018XF.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class NewItemPage : ContentPage
+    public partial class NewTeamPage : ContentPage
     {
         public Team Team { get; set; }
 
-        public NewItemPage()
+        public NewTeamPage()
         {
             InitializeComponent();
 

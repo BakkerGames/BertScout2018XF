@@ -9,18 +9,18 @@ using BertScout2018XF.ViewModels;
 namespace BertScout2018XF.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ItemDetailPage : ContentPage
+    public partial class TeamDetailPage : ContentPage
     {
-        ItemDetailViewModel viewModel;
+        TeamDetailViewModel viewModel;
 
-        public ItemDetailPage(ItemDetailViewModel viewModel)
+        public TeamDetailPage(TeamDetailViewModel viewModel)
         {
             InitializeComponent();
 
             BindingContext = this.viewModel = viewModel;
         }
 
-        public ItemDetailPage()
+        public TeamDetailPage()
         {
             InitializeComponent();
 
@@ -30,7 +30,7 @@ namespace BertScout2018XF.Views
                 Name = "Team Name"
             };
 
-            viewModel = new ItemDetailViewModel(item);
+            viewModel = new TeamDetailViewModel(item);
             BindingContext = viewModel;
         }
     }

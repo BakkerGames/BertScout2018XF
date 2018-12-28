@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BertScout2018XF.Android", "BertScout2018XF\BertScout2018XF.Android\BertScout2018XF.Android.csproj", "{F96ED314-BA73-4A6B-8C4E-0847FAB0BA07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BertScout2018XF", "BertScout2018XF\BertScout2018XF\BertScout2018XF.csproj", "{A6960003-2981-4264-A682-6F8C1565B9F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F96ED314-BA73-4A6B-8C4E-0847FAB0BA07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F96ED314-BA73-4A6B-8C4E-0847FAB0BA07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F96ED314-BA73-4A6B-8C4E-0847FAB0BA07}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F96ED314-BA73-4A6B-8C4E-0847FAB0BA07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F96ED314-BA73-4A6B-8C4E-0847FAB0BA07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F96ED314-BA73-4A6B-8C4E-0847FAB0BA07}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A6960003-2981-4264-A682-6F8C1565B9F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6960003-2981-4264-A682-6F8C1565B9F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6960003-2981-4264-A682-6F8C1565B9F0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A6960003-2981-4264-A682-6F8C1565B9F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6960003-2981-4264-A682-6F8C1565B9F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6960003-2981-4264-A682-6F8C1565B9F0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CCF89BF-643D-4487-B8B6-A7872CE57345}
+	EndGlobalSection
+EndGlobal
